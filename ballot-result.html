@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballot Result - UNILAG</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+  <header class="header">
+    <div class="header-left">
+      <label for="menuToggle" class="hamburger"><span></span><span></span><span></span></label>
+      <img src="images/unilag-logo.png" alt="UNILAG logo" class="logo">
+      <span class="header-title">UNIVERSITY OF LAGOS</span>
+    </div>
+    <div class="avatar">A</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
+        <a href="apply.html" class="nav-item">📝 Apply for Hostel</a>
+        <a href="ballot-result.html" class="nav-item active">🎲 Ballot Result</a>
+        <a href="profile.html" class="nav-item">👤 Profile</a>
+      </nav>
+      <a href="index.html" class="nav-item logout">🚪 Logout</a>
+    </aside>
+
+    <label for="menuToggle" class="overlay"></label>
+
+    <main class="main">
+      <h1>Ballot Result</h1>
+      <p class="main-subtitle">Official allocation status for the 2025/2026 academic session.</p>
+
+      <div class="card result-card">
+        <span class="status-badge success">SUCCESSFUL</span>
+        <h2>Congratulations! Bed Space Allocated</h2>
+        <p class="result-detail">You have been allocated a space based on availability.</p>
+
+        <div class="info-list">
+          <p><strong>Hostel:</strong> Jaja Hall</p>
+          <p><strong>Block / Room:</strong> Block B, Room 204</p>
+          <p><strong>Bed Space:</strong> B3 (Upper Bunk)</p>
+          <p><strong>Payment Deadline:</strong> Next 72 Hours</p>
+        </div>
+
+        <button type="button" onclick="window.print()">🖨️ Print Slip</button>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

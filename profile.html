@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - UNILAG</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+  <header class="header">
+    <div class="header-left">
+      <label for="menuToggle" class="hamburger"><span></span><span></span><span></span></label>
+      <img src="images/unilag-logo.png" alt="UNILAG logo" class="logo">
+      <span class="header-title">UNIVERSITY OF LAGOS</span>
+    </div>
+    <div class="avatar">A</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
+        <a href="apply.html" class="nav-item">📝 Apply for Hostel</a>
+        <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
+        <a href="profile.html" class="nav-item active">👤 Profile</a>
+      </nav>
+      <a href="index.html" class="nav-item logout">🚪 Logout</a>
+    </aside>
+
+    <label for="menuToggle" class="overlay"></label>
+
+    <main class="main">
+      <h1>Student Profile</h1>
+      <p class="main-subtitle">Your personal and academic record in the balloting portal.</p>
+
+      <div class="card profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar">A</div>
+          <div>
+            <h2>Adeboye Samuel</h2>
+            <p>220405012 • Computer Science</p>
+          </div>
+        </div>
+
+        <div class="info-list">
+          <p><strong>Faculty:</strong> Science</p>
+          <p><strong>Department:</strong> Computer Sciences</p>
+          <p><strong>Level:</strong> 300 Level</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Email:</strong> s.adeboye@student.unilag.edu.ng</p>
+          <p><strong>Phone:</strong> +234 812 345 6789</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

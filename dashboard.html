@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - UNILAG Hostel Balloting</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+  <header class="header">
+    <div class="header-left">
+      <label for="menuToggle" class="hamburger"><span></span><span></span><span></span></label>
+      <img src="images/unilag-logo.png" alt="UNILAG logo" class="logo">
+      <span class="header-title">UNIVERSITY OF LAGOS</span>
+    </div>
+    <div class="avatar">A</div>
+  </header>
+
+  <div class="layout">
+
+    <!-- FIXED SIDEBAR LINKS -->
+    <aside class="sidebar">
+      <nav>
+        <a href="dashboard.html" class="nav-item active">🏠 Dashboard</a>
+        <a href="apply.html" class="nav-item">📝 Apply for Hostel</a>
+        <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
+        <a href="profile.html" class="nav-item">👤 Profile</a>
+      </nav>
+      <a href="index.html" class="nav-item logout">🚪 Logout</a>
+    </aside>
+
+    <label for="menuToggle" class="overlay"></label>
+
+    <main class="main">
+      <h1>Welcome Back 👋</h1>
+      <p class="main-subtitle">Manage your UNILAG hostel balloting status below.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Ballot Status</h3>
+          <p class="status-badge">Pending</p>
+          <p>Balloting exercise opens soon.</p>
+        </div>
+
+        <div class="card">
+          <h3>Application</h3>
+          <p>You have not submitted a hostel application yet.</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

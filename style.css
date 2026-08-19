@@ -1,0 +1,284 @@
+:root {
+  --primary: #6D2130;
+  --primary-hover: #862237;
+  --bg-dark: #4A1420;
+  --text-dark: #2A1418;
+  --text-light: #ffffff;
+  --text-muted: #7A6367;
+  --border-color: #EBDEE0;
+  --radius-lg: 14px;
+  --transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--text-light);
+  color: var(--text-dark);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100dvh;
+}
+
+/* ---------------- LEFT SIDE (Photo Section) ---------------- */
+
+.left {
+  position: relative;
+  background-color: var(--bg-dark);
+  overflow: hidden;
+}
+
+.building-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: brightness(0.9) saturate(1.05);
+}
+
+/* Tint and Gradient Overlays */
+.left::before,
+.left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.left::before {
+  background: linear-gradient(160deg, rgba(74, 20, 32, 0.55), rgba(74, 20, 32, 0.15) 55%);
+}
+
+.left::after {
+  top: auto;
+  height: 45%;
+  background: linear-gradient(to top, rgba(20, 5, 9, 0.75), transparent);
+}
+
+.left-text {
+  position: absolute;
+  inset: auto 36px 40px 36px;
+  color: var(--text-light);
+  z-index: 2;
+}
+
+.left-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #E8C6CD;
+  margin-bottom: 8px;
+}
+
+.left-text h2 {
+  font-size: 1.875rem; /* ~30px */
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.left-text .tagline {
+  font-size: 1rem; /* ~16px */
+  color: #E4D3D6;
+}
+
+/* ---------------- RIGHT SIDE (Form Section) ---------------- */
+
+.right {
+  padding: 48px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-main {
+  width: 135px;
+  margin-bottom: 20px;
+}
+
+.right h1 {
+  font-size: 2.125rem; /* ~34px */
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1rem; /* ~16px */
+  margin-bottom: 32px;
+}
+
+.brand-name {
+  display: none;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 0.9375rem; /* ~15px */
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  font-size: 1rem; /* ~16px */
+  color: var(--text-dark);
+  background: #FDFAFA;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+}
+
+input::placeholder {
+  color: #BBA5A9;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: var(--primary-hover);
+  background: var(--text-light);
+  box-shadow: 0 0 0 4px rgba(134, 34, 55, 0.12);
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 60px;
+}
+
+.eye {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  font-size: 0.875rem; /* ~14px */
+  font-weight: 600;
+  color: var(--primary-hover);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.eye:hover,
+.row a:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+  font-size: 0.9375rem; /* ~15px */
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember input {
+  accent-color: var(--primary-hover);
+  width: 16px;
+  height: 16px;
+}
+
+.row a {
+  color: var(--primary-hover);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1rem; /* ~17px */
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background var(--transition), box-shadow var(--transition), transform 0.15s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 10px 24px -8px rgba(109, 33, 48, 0.55);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* ---------------- RESPONSIVE (Mobile & Tablet) ---------------- */
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    padding: 40px 24px;
+    color: var(--text-light);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/unilag-building.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo-main {
+    width: 120px;
+    border-radius: 20px;
+  }
+
+  .brand-name {
+    display: block;
+    font-size: 1.75rem; /* ~28px */
+    font-weight: 800;
+    margin-bottom: 28px;
+  }
+
+  .right h1 {
+    font-size: 1.75rem;
+  }
+
+  .right h1,
+  .subtitle {
+    color: var(--text-light);
+  }
+
+  .subtitle {
+    font-size: 1.0625rem;
+    font-weight: 600;
+  }
+}

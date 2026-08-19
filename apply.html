@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Hostel - UNILAG</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+  <header class="header">
+    <div class="header-left">
+      <label for="menuToggle" class="hamburger"><span></span><span></span><span></span></label>
+      <img src="images/unilag-logo.png" alt="UNILAG logo" class="logo">
+      <span class="header-title">UNIVERSITY OF LAGOS</span>
+    </div>
+    <div class="avatar">A</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
+        <a href="apply.html" class="nav-item active">📝 Apply for Hostel</a>
+        <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
+        <a href="profile.html" class="nav-item">👤 Profile</a>
+      </nav>
+      <a href="index.html" class="nav-item logout">🚪 Logout</a>
+    </aside>
+
+    <label for="menuToggle" class="overlay"></label>
+
+    <main class="main">
+      <h1>Hostel Application</h1>
+      <p class="main-subtitle">Select your preferred options and submit your application for the ballot.</p>
+
+      <div class="card form-card">
+        <form action="ballot-result.html" method="GET">
+          
+          <div class="form-group">
+            <label for="level">Current Level</label>
+            <select id="level" required>
+              <option value="">-- Select Level --</option>
+              <option value="100">100 Level</option>
+              <option value="200">200 Level</option>
+              <option value="300">300 Level</option>
+              <option value="400">400 Level / Final Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hall1">1st Choice Hostel</label>
+            <select id="hall1" required>
+              <option value="">-- Select First Choice --</option>
+              <option value="jafo">Jaja Hall</option>
+              <option value="moremi">Moremi Hall</option>
+              <option value="enanjoku">Eni Njoku Hall</option>
+              <option value="mariere">Mariere Hall</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hall2">2nd Choice Hostel</label>
+            <select id="hall2">
+              <option value="">-- Select Second Choice --</option>
+              <option value="jafo">Jaja Hall</option>
+              <option value="moremi">Moremi Hall</option>
+              <option value="enanjoku">Eni Njoku Hall</option>
+              <option value="mariere">Mariere Hall</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="health">Special Health Condition (Optional)</label>
+            <input type="text" id="health" placeholder="e.g. Asthma, Mobility issue">
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

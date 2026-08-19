@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNILAG Hostel Balloting - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="container">
+
+      <!-- left side -->
+      <div class="left">
+        <img src="images/unilag-building.jpg" alt="UNILAG campus" class="building-photo">
+        <div class="left-text"></div>
+      </div>
+
+      <!-- right side -->
+      <div class="right">
+        <img src="images/unilag-logo.png" alt="UNILAG logo" class="logo-main">
+        <p class="brand-name">University of Lagos</p>
+
+        <h1>Login</h1>
+        <p class="subtitle">Sign in to continue your hostel balloting.</p>
+
+        <!-- Action added here -->
+        <form class="form" action="dashboard.html" method="GET">
+          <label for="matric">Matric Number</label>
+          <input type="text" id="matric" placeholder="e.g. 22/123456789" required>
+
+          <label for="password">Password</label>
+          <div class="password-box">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="button" id="togglePass" class="eye" aria-label="Show password">👁️</button>
+          </div>
+
+          <div class="row">
+            <label class="remember">
+              <input type="checkbox">
+              Remember Me
+            </label>
+          </div>
+
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
