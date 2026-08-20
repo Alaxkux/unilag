@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Profile - UNILAG</title>
+  <title>Student Profile - UNILAG Hostel Balloting</title>
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
   </header>
 
   <div class="layout">
+
     <aside class="sidebar">
       <nav>
         <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
@@ -27,6 +28,7 @@
         <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
         <a href="profile.html" class="nav-item active">👤 Profile</a>
       </nav>
+
       <a href="index.html" class="nav-item logout">🚪 Logout</a>
     </aside>
 
@@ -34,27 +36,35 @@
 
     <main class="main">
       <h1>Student Profile</h1>
-      <p class="main-subtitle">Your personal and academic record in the balloting portal.</p>
+      <p class="main-subtitle">Academic Details</p>
 
       <div class="card profile-card">
-        <div class="profile-header">
-          <div class="profile-avatar">A</div>
-          <div>
-            <h2>Adeboye Samuel</h2>
-            <p>220405012 • Computer Science</p>
-          </div>
-        </div>
+        <div class="profile-info-grid">
 
-        <div class="info-list">
-          <p><strong>Faculty:</strong> Science</p>
-          <p><strong>Department:</strong> Computer Sciences</p>
-          <p><strong>Level:</strong> 300 Level</p>
-          <p><strong>Gender:</strong> Male</p>
-          <p><strong>Email:</strong> s.adeboye@student.unilag.edu.ng</p>
-          <p><strong>Phone:</strong> +234 812 345 6789</p>
+          <div class="info-group">
+            <span class="info-label">Matric Number</span>
+            <span class="info-value">220405012</span>
+          </div>
+
+          <div class="info-group">
+            <span class="info-label">Faculty</span>
+            <span class="info-value">Faculty of Engineering</span>
+          </div>
+
+          <div class="info-group">
+            <span class="info-label">Department</span>
+            <span class="info-value">Systems Engineering</span>
+          </div>
+
+          <div class="info-group">
+            <span class="info-label">Level</span>
+            <span class="info-value">300 Level</span>
+          </div>
+
         </div>
       </div>
     </main>
+
   </div>
 
 </body>

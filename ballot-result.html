@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ballot Result - UNILAG</title>
+  <title>Ballot Result - UNILAG Hostel Balloting</title>
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
   </header>
 
   <div class="layout">
+
     <aside class="sidebar">
       <nav>
         <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
@@ -27,30 +28,48 @@
         <a href="ballot-result.html" class="nav-item active">🎲 Ballot Result</a>
         <a href="profile.html" class="nav-item">👤 Profile</a>
       </nav>
+
       <a href="index.html" class="nav-item logout">🚪 Logout</a>
     </aside>
 
     <label for="menuToggle" class="overlay"></label>
 
     <main class="main">
-      <h1>Ballot Result</h1>
-      <p class="main-subtitle">Official allocation status for the 2025/2026 academic session.</p>
+      <h1>Ballot Allocation Result</h1>
+      <p class="main-subtitle">Official status of your hostel space allocation</p>
 
-      <div class="card result-card">
-        <span class="status-badge success">SUCCESSFUL</span>
-        <h2>Congratulations! Bed Space Allocated</h2>
-        <p class="result-detail">You have been allocated a space based on availability.</p>
+      <div class="ballot-result-container">
+        <div class="card result-card">
+          <div class="result-detail-row">
+            <span class="info-label">Allocation Status</span>
+            <span class="status-badge success">Allocated</span>
+          </div>
 
-        <div class="info-list">
-          <p><strong>Hostel:</strong> Jaja Hall</p>
-          <p><strong>Block / Room:</strong> Block B, Room 204</p>
-          <p><strong>Bed Space:</strong> B3 (Upper Bunk)</p>
-          <p><strong>Payment Deadline:</strong> Next 72 Hours</p>
+          <div class="result-detail-row">
+            <span class="info-label">Assigned Hall</span>
+            <span class="info-value">Jaja Hall</span>
+          </div>
+
+          <div class="result-detail-row">
+            <span class="info-label">Block / Room</span>
+            <span class="info-value">Block C, Room 204</span>
+          </div>
+
+          <div class="result-detail-row">
+            <span class="info-label">Bed Space</span>
+            <span class="info-value">Bed A</span>
+          </div>
+
+          <div class="result-detail-row">
+            <span class="info-label">Clearance Deadline</span>
+            <span class="info-value">Aug 25, 2026 (72 Hours Remaining)</span>
+          </div>
+
+          <button class="submit-btn" style="margin-top: 16px;">Proceed to Payment & Clearance</button>
         </div>
-
-        <button type="button" onclick="window.print()">🖨️ Print Slip</button>
       </div>
     </main>
+
   </div>
 
 </body>

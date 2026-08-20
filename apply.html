@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apply for Hostel - UNILAG</title>
+  <title>Apply for Hostel - UNILAG Hostel Balloting</title>
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
   </header>
 
   <div class="layout">
+
     <aside class="sidebar">
       <nav>
         <a href="dashboard.html" class="nav-item">🏠 Dashboard</a>
@@ -27,60 +28,56 @@
         <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
         <a href="profile.html" class="nav-item">👤 Profile</a>
       </nav>
+
       <a href="index.html" class="nav-item logout">🚪 Logout</a>
     </aside>
 
     <label for="menuToggle" class="overlay"></label>
 
     <main class="main">
-      <h1>Hostel Application</h1>
-      <p class="main-subtitle">Select your preferred options and submit your application for the ballot.</p>
+      <div class="welcome-banner">
+        <h1>Hostel Application</h1>
+        <p class="main-subtitle">Select your preferred accommodation choices below</p>
+      </div>
 
       <div class="card form-card">
-        <form action="ballot-result.html" method="GET">
-          
+        <form>
           <div class="form-group">
-            <label for="level">Current Level</label>
-            <select id="level" required>
-              <option value="">-- Select Level --</option>
-              <option value="100">100 Level</option>
-              <option value="200">200 Level</option>
-              <option value="300">300 Level</option>
-              <option value="400">400 Level / Final Year</option>
-            </select>
+            <label for="preferred-hall">Preferred Hostel (Choice 1)</label>
+            <div class="select-wrapper">
+              <select id="preferred-hall" name="preferred-hall" required>
+                <option value="">-- Select Preferred Hall --</option>
+                <option value="Jaja Hall">Jaja Hall</option>
+                <option value="Mariere Hall">Mariere Hall</option>
+                <option value="Eni Njoku Hall">Eni Njoku Hall</option>
+                <option value="Sodeinde Hall">Sodeinde Hall</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="hall1">1st Choice Hostel</label>
-            <select id="hall1" required>
-              <option value="">-- Select First Choice --</option>
-              <option value="jafo">Jaja Hall</option>
-              <option value="moremi">Moremi Hall</option>
-              <option value="enanjoku">Eni Njoku Hall</option>
-              <option value="mariere">Mariere Hall</option>
-            </select>
+            <label for="alternative-hall">Alternative Hostel (Choice 2)</label>
+            <div class="select-wrapper">
+              <select id="alternative-hall" name="alternative-hall" required>
+                <option value="">-- Select Alternative Hall --</option>
+                <option value="Jaja Hall">Jaja Hall</option>
+                <option value="Mariere Hall">Mariere Hall</option>
+                <option value="Eni Njoku Hall">Eni Njoku Hall</option>
+                <option value="Sodeinde Hall">Sodeinde Hall</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="hall2">2nd Choice Hostel</label>
-            <select id="hall2">
-              <option value="">-- Select Second Choice --</option>
-              <option value="jafo">Jaja Hall</option>
-              <option value="moremi">Moremi Hall</option>
-              <option value="enanjoku">Eni Njoku Hall</option>
-              <option value="mariere">Mariere Hall</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="health">Special Health Condition (Optional)</label>
-            <input type="text" id="health" placeholder="e.g. Asthma, Mobility issue">
+            <label for="special-request">Special Medical / Accessibility Request (Optional)</label>
+            <input type="text" id="special-request" placeholder="e.g., Ground floor required">
           </div>
 
           <button type="submit" class="submit-btn">Submit Application</button>
         </form>
       </div>
     </main>
+
   </div>
 
 </body>
