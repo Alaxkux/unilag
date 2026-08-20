@@ -21,7 +21,6 @@
 
   <div class="layout">
 
-    <!-- FIXED SIDEBAR LINKS -->
     <aside class="sidebar">
       <nav>
         <a href="dashboard.html" class="nav-item active">🏠 Dashboard</a>
@@ -29,27 +28,124 @@
         <a href="ballot-result.html" class="nav-item">🎲 Ballot Result</a>
         <a href="profile.html" class="nav-item">👤 Profile</a>
       </nav>
+
+      <div class="sidebar-user-info">
+        <p class="user-name">Adeboye Samuel</p>
+        <p class="user-detail">220405012 • 300L</p>
+      </div>
+
       <a href="index.html" class="nav-item logout">🚪 Logout</a>
     </aside>
 
     <label for="menuToggle" class="overlay"></label>
 
     <main class="main">
-      <h1>Welcome Back 👋</h1>
-      <p class="main-subtitle">Manage your UNILAG hostel balloting status below.</p>
+      <div class="welcome-banner">
+        <h1>Welcome Back, Samuel 👋</h1>
+        <p class="main-subtitle">UNILAG Hostel Balloting Portal • 2025/2026 Academic Session</p>
+      </div>
 
-      <div class="cards-grid">
-        <div class="card">
-          <h3>Ballot Status</h3>
-          <p class="status-badge">Pending</p>
-          <p>Balloting exercise opens soon.</p>
-        </div>
-
-        <div class="card">
-          <h3>Application</h3>
-          <p>You have not submitted a hostel application yet.</p>
+      <div class="card progress-card">
+        <h3>Application Progress</h3>
+        <div class="progress-tracker">
+          <div class="step completed">
+            <div class="step-icon">1</div>
+            <p>Profile Verified</p>
+          </div>
+          <div class="step active">
+            <div class="step-icon">2</div>
+            <p>Hostel Application</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <p>Ballot Processing</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">4</div>
+            <p>Space Clearance</p>
+          </div>
         </div>
       </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-icon">🏫</span>
+          <div>
+            <h4>Total Available Halls</h4>
+            <p class="stat-value">12 Halls</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-icon">🛏️</span>
+          <div>
+            <h4>Total Bed Spaces</h4>
+            <p class="stat-value">6,450 Spaces</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-icon">⌛</span>
+          <div>
+            <h4>Ballot Window</h4>
+            <p class="stat-value">Opens in 2 Days</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-icon">📌</span>
+          <div>
+            <h4>Application Status</h4>
+            <p class="status-badge">Pending Submission</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        
+        <div class="card">
+          <h3>Quick Actions</h3>
+          <p class="card-desc">Common tasks you can perform right away:</p>
+          
+          <div class="actions-list">
+            <a href="apply.html" class="action-btn primary">
+              <span>📝 Submit Hostel Application</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="profile.html" class="action-btn">
+              <span>👤 Update Profile Records</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="ballot-result.html" class="action-btn">
+              <span>🎲 View Ballot Allocation</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📢 Important Notices</h3>
+          <div class="announcements-list">
+            <div class="announcement-item">
+              <span class="notice-date">AUG 18</span>
+              <div>
+                <h5>Freshers & Final Year Priority</h5>
+                <p>Hostel balloting opens first for 100L and 400L students before other levels.</p>
+              </div>
+            </div>
+
+            <div class="announcement-item">
+              <span class="notice-date">AUG 15</span>
+              <div>
+                <h5>Payment Deadline Warning</h5>
+                <p>Allocated bed spaces must be paid for within 72 hours of balloting or will be revoked.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </main>
 
   </div>
